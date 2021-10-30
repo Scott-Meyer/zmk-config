@@ -16,7 +16,7 @@
 #define NUM 5
 #define FUN 6
 
-{
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -40,10 +40,10 @@
 // |      |      |       |       |       |     |   |      |       |        |      |      |      |
 //                       |       |       |     |   | stop | Play  | Mute   |
                         bindings = <
-   &trans   &trans      &trans     &trans       &trans     &trans   &trans   &trans           &trans           &trans         &trans       &trans   
-   &trans   &kp LCTRL   &kp LALT   &kp LSHIFT   &kp LGUI   &trans   &trans   &kp C_PREVIOUS   &kp C_VOL_DOWN   &kp C_VOL_UP   &kp C_NEXT   &trans
-   &trans   &trans      &trans     &trans       &trans     &trans   &trans   &trans           &trans           &trans         &trans       &trans   
-                    	&trans     &trans       &trans     &kp C_STOP   &kp C_PLAY_PAUSE   &kp C_MUTE   
+   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans     &trans           &trans           &trans         &trans       &trans   
+   &trans      &kp LCTRL     &kp LALT      &kp LSHIFT    &kp LGUI      &trans        &trans     &kp C_PREVIOUS   &kp C_VOL_DOWN   &kp C_VOL_UP   &kp C_NEXT   &trans
+   &trans      &trans        &trans        &trans        &trans        &trans        &trans     &trans           &trans           &trans         &trans       &trans   
+                    	                   &trans        &trans        &trans        &kp C_STOP &kp C_PLAY_PAUSE &kp C_MUTE   
                         >;
                 };
                 nav_layer {
@@ -79,10 +79,10 @@
 // |      | ~    |  !  |  @   |  #  |  |  |   |     |     |       |     |      |      |
 //                     |  (   |  )  |  _  |   |     |     |       |
                         bindings = <
-   &trans    &kp {        &kp &        &kp *        &kp (        &kp }          &trans   &trans   &trans     &trans   &trans    &trans  
-   &trans    &kp :        &kp $        &kp %        &kp ^        &kp +          &trans   &kp RGUI &kp RSHIFT &kp RALT &kp RCTRL &trans
-   &trans    &kp ~        &kp !        &kp @        &kp #        &kp |          &trans   &trans   &trans     &trans   &trans    &trans
-                          	       &kp (        &kp )        &kp _          &trans   &trans   &trans  
+   &trans    &kp LBRC     &kp AMPERSAND   &kp KP_MULTIPLY  &kp LPAR         &kp RBRC       &trans   &trans   &trans     &trans   &trans    &trans  
+   &trans    &kp COLO     &kp DOLLAR      &kp PERCENT      &kp CARET        &kp PLUS       &trans   &kp RGUI &kp RSHIFT &kp RALT &kp RCTRL &trans
+   &trans    &kp TILDE    &kp EXCLAMATION &kp AT_SIGN      &kp POUND        &kp PIPE       &trans   &trans   &trans     &trans   &trans    &trans
+                          &kp LPAR        &kp RPAR         &kp UNDERSCORE   &trans         &trans   &trans  
                         >;
                 };
 
@@ -93,10 +93,10 @@
 // |      |  `  |  1  |  2  |  3  |  \  |   |     |     |       |     |      |      |
 //                    |  .  |  0  |  -  |   |     |     |       |
                         bindings = <
-   &trans    &kp [        &kp 7        &kp 8        &kp 9        &kp ]          &trans   &trans   &trans     &trans   &trans    &trans  
-   &trans    &kp ;        &kp 4        &kp 5        &kp 6        &kp =          &trans   &kp RGUI &kp RSHIFT &kp RALT &kp RCTRL &trans
-   &trans    &kp `        &kp 1        &kp 2        &kp 3        &kp \          &trans   &trans   &trans     &trans   &trans    &trans
-                          	       &kp .        &kp 0        &kp -          &trans   &trans   &trans 
+   &trans    &kp LBKT     &kp 7        &kp 8        &kp 9        &kp RBKT       &trans   &trans   &trans     &trans   &trans    &trans  
+   &trans    &kp SEMI     &kp 4        &kp 5        &kp 6        &kp EQUAL      &trans   &kp RGUI &kp RSHIFT &kp RALT &kp RCTRL &trans
+   &trans    &kp GRAVE    &kp 1        &kp 2        &kp 3        &kp BACKSLASH  &trans   &trans   &trans     &trans   &trans    &trans
+                          &kp PERIOD   &kp 0        &kp MINUS    &trans         &trans   &trans 
                         >;
                 };
                 fun_layer {
@@ -109,7 +109,7 @@
    &trans    &kp F12      &kp F7       &kp F8       &kp F9       &kp PSCRN        &trans   &trans   &trans     &trans   &trans    &trans  
    &trans    &kp F11      &kp F4       &kp F5       &kp F6       &kp SCROLLLOCK   &trans   &kp RGUI &kp RSHIFT &kp RALT &kp RCTRL &trans
    &trans    &kp F10      &kp F1       &kp F2       &kp F3       &kp PAUSE_BREAK  &trans   &trans   &trans     &trans   &trans    &trans
-                          	       &trans       &trans       &trans           &trans   &trans   &trans 
+                          &trans       &trans       &trans       &trans           &trans   &trans 
                         >;
                 };
         };
