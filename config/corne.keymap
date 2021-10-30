@@ -16,7 +16,7 @@
 #define NUM 5
 #define FUN 6
 
-/ {
+{
         keymap {
                 compatible = "zmk,keymap";
 
