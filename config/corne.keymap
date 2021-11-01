@@ -35,7 +35,7 @@
                                                 &lt MEDIA ESCAPE    &lt NAV SPACE   &lt MOUSE TAB   &lt SYM ENTER   &lt NUM BACKSPACE   &lt FUN DEL
                         >;
                 };
-
+/*
                 media_layer {
 // -----------------------------------------------------------------------------------------
 // |      |      |       |       |       |     |   |      |       |        |      |      |      |
@@ -119,5 +119,6 @@
                                                 &trans              &trans          &trans          &trans          &trans              &trans 
                         >;
                 };
+                */
         };
 };
