@@ -58,7 +58,7 @@
 //                       |       |       |     |   |        |       |        |
                         bindings = <
    &trans       &trans      &trans              &trans              &trans          &trans          &trans          &trans              &trans           &trans         &trans                  &trans   
-   &trans       &kp LCTRL   &kp LALT            &kp LSHIFT          &kp LGUI        &trans          &trans          &trans              &trans          &trans          &trans                  &trans/*&kp Left            &kp Down         &kp Up         &kp Right               &trans */
+   &trans       &kp LCTRL   &kp LALT            &kp LSHIFT          &kp LGUI        &trans          &trans          &trans              &trans           &kp UP_ARROW   &trans                  &trans/*&kp Left            &kp Down         &kp Up         &kp Right               &trans */
    &trans       &trans      &trans              &trans              &trans          &trans          &trans          &trans              &trans           &trans         &trans                  &trans   
                     	                        &trans              &trans          &trans          &trans          &trans              &trans   
                         >;
