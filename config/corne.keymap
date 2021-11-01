@@ -91,7 +91,7 @@
                                                 &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS        &kp UNDERSCORE  &trans          &trans              &trans  
                         >;
                 };
-/*
+
                 num_layer {
 // -----------------------------------------------------------------------------------------
 // |      |  [  |  7  |  8  |  9  |  ]  |   |     |     |       |     |      |      |
@@ -119,6 +119,5 @@
                                                 &trans              &trans          &trans          &trans          &trans              &trans 
                         >;
                 };
-                */
         };
 };
