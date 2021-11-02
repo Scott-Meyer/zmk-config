@@ -20,6 +20,10 @@
 #define FUN 6
 #define GAME 7
 
+&mt {
+        flavor = "balanced";
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
