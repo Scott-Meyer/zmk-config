@@ -12,13 +12,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define MEDIA 1
-#define NAV 2
-#define MOUSE 3
-#define SYM 4
-#define NUM 5
-#define FUN 6
-#define GAME 7
+#define GAME 1
+#define MEDIA 2
+#define NAV 3
+#define MOUSE 4
+#define SYM 5
+#define NUM 6
+#define FUN 7
+
 
 &mt {
         flavor = "balanced";
@@ -42,6 +43,20 @@
                         >;
                 };
 
+                Game_layer {
+// -----------------------------------------------------------------------------------------
+// | ?      |  Q        |  W       |  E  |  R       |  T  |   |  Y  |  U       |  I  |  O       |  P        | BKSP |
+// | ?      |  A (Ctrl) |  S (Alt) |  D  |  F (cmd) |  G  |   |  H  |  J (cmd) |  K  |  L (alt) |  ; (Ctrl) |  '   |
+// | SHIFT  |  Z        |  X       |  C  |  V       |  B  |   |  N  |  M       |  ,  |  .       |  /        | ESC  |
+//                                 | esc (media) | space (nav)      | tab (mouse) |   | ent (sym) | bksp (num)      | del(fun) |
+                        bindings = <
+    &kp TAB     &kp Q           &kp W           &kp E               &kp R           &kp T           &kp Y           &kp U               &kp I           &kp O           &kp P                   &kp BSPC
+    &kp LCTRL   &kp A           &kp S           &kp D               &kp F           &kp G           &kp H           &mt RGUI J          &mt LSHFT K     &mt RALT L      &mt RCTRL SEMICOLON     &kp SQT
+    &kp LSHFT   &kp Z           &kp X           &kp C               &kp V           &kp B           &kp N           &kp M               &kp COMMA       &kp DOT         &kp SLASH               &kp ESCAPE
+                                                &kp ESC             &kp SPACE       &mo MOUSE       &lt SYM ENTER   &lt NUM BACKSPACE   &lt FUN DEL
+                        >;
+                };
+
                 media_layer {
 // -----------------------------------------------------------------------------------------
 // |BT_CLR| bt1  | bt2   | bt3   | bt4   | bt5 |   |      |       |        |      |      |      |
@@ -58,14 +73,14 @@
 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |      |      |       |       |       |     |   | Redo   | Paste | Copy   | Cut  | Udno   |          |
-// |      | CTRL | ALT   | SHIFT | SUPER |     |   | Caps   | Left  | Down   | Up   | Right  |          |
+// |      |      | Up    |       |       |     |   | Redo   | Paste | Copy   | Cut  | Udno   |          |
+// |      | Left | Down  | Right | SUPER |     |   | Caps   | Left  | Down   | Up   | Right  |          |
 // |      |      |       |       |       |     |   | Insert | Home  | P down | P up | End    |          |
 //                       |       |       |     |   |        |       |        |
                         bindings = <
-   &trans       &trans      &trans              &trans              &trans          &trans          &kp LC(Y)       &kp LC(V)           &kp LC(C)        &kp LC(X)      &kp LC(Z)               &kp DELETE   
-   &trans       &kp LCTRL   &kp LALT            &kp LSHIFT          &kp LGUI        &trans          &kp CAPSLOCK    &kp LEFT_ARROW      &kp UP_ARROW     &kp UP_ARROW   &kp RIGHT_ARROW         &trans
-   &trans       &trans      &trans              &trans              &trans          &trans          &kp INSERT      &kp HOME            &kp PAGE_DOWN    &kp PAGE_UP    &kp END                 &trans   
+   &trans       &trans          &kp UP_ARROW    &trans              &trans          &trans          &kp LC(Y)       &kp LC(V)           &kp LC(C)        &kp LC(X)      &kp LC(Z)               &kp DELETE   
+   &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LGUI        &trans          &kp CAPSLOCK    &kp LEFT_ARROW      &kp DOWN_ARROW     &kp UP_ARROW   &kp RIGHT_ARROW         &trans
+   &trans       &trans          &trans          &trans              &trans          &trans          &kp INSERT      &kp HOME            &kp PAGE_DOWN    &kp PAGE_UP    &kp END                 &trans   
                     	                        &trans              &trans          &trans          &trans          &trans              &trans   
                         >;
                 };
@@ -139,18 +154,5 @@
                         >;
                 };
 
-                Game_layer {
-// -----------------------------------------------------------------------------------------
-// | ?      |  Q        |  W       |  E  |  R       |  T  |   |  Y  |  U       |  I  |  O       |  P        | BKSP |
-// | ?      |  A (Ctrl) |  S (Alt) |  D  |  F (cmd) |  G  |   |  H  |  J (cmd) |  K  |  L (alt) |  ; (Ctrl) |  '   |
-// | SHIFT  |  Z        |  X       |  C  |  V       |  B  |   |  N  |  M       |  ,  |  .       |  /        | ESC  |
-//                                 | esc (media) | space (nav)      | tab (mouse) |   | ent (sym) | bksp (num)      | del(fun) |
-                        bindings = <
-    &kp TAB     &kp Q           &kp W           &kp E               &kp R           &kp T           &kp Y           &kp U               &kp I           &kp O           &kp P                   &kp BSPC
-    &kp LCTRL   &kp A           &kp S           &kp D               &kp F           &kp G           &kp H           &mt RGUI J          &mt LSHFT K     &mt RALT L      &mt RCTRL SEMICOLON     &kp SQT
-    &kp LSHFT   &kp Z           &kp X           &kp C               &kp V           &kp B           &kp N           &kp M               &kp COMMA       &kp DOT         &kp SLASH               &kp ESCAPE
-                                                &kp ESC             &kp SPACE       &mo MOUSE       &lt SYM ENTER   &lt NUM BACKSPACE   &lt FUN DEL
-                        >;
-                };
         };
 };
