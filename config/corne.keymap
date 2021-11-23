@@ -33,7 +33,7 @@
 // -----------------------------------------------------------------------------------------
 // | ?      |  Q        |  W       |  E  |  R       |  T  |   |  Y  |  U       |  I  |  O       |  P        | BKSP |
 // | ?      |  A (Ctrl) |  S (Alt) |  D  |  F (cmd) |  G  |   |  H  |  J (cmd) |  K  |  L (alt) |  ; (Ctrl) |  '   |
-// | SHIFT  |  Z        |  X       |  C  |  V       |  B  |   |  N  |  M       |  ,  |  .       |  /        | ESC  |
+// | SHIFT  |  Z        |  X       |  C  |  V       |  B  |   |  N  |  M       |  ,  |  .       |  /        |  ESC |
 //                                 | esc (media) | space (nav)      | tab (mouse) |   | ent (sym) | bksp (num)      | del(fun) |
                         bindings = <
     &kp TAB     &kp Q           &kp W           &kp E               &kp R           &kp T           &kp Y           &kp U               &kp I           &kp O           &kp P                   &kp BSPC
@@ -119,10 +119,10 @@
 // |      | ~    |  !  |  @   |  #  |  |  |   |     |     |       |     |      |      |
 //                     |  (   |  )  |  _  |   |     |     |       |
                         bindings = <
-    &trans      &kp LEFT_BRACE    &kp LS(NUMBER_7)     &kp KP_MULTIPLY         &kp KP_LEFT_PARENTHESIS  &kp RIGHT_BRACE    &trans          &trans              &trans          &trans          &trans                  &trans  
+    &trans      &kp LEFT_BRACE    &kp LS(NUMBER_7)     &kp KP_MULTIPLY         &kp LEFT_PARENTHESIS     &kp RIGHT_BRACE    &trans          &trans              &trans          &trans          &trans                  &trans  
     &trans      &kp COLON         &kp LS(NUMBER_4)     &kp LS(AMPERSAND)       &kp LS(NUMBER_6)         &kp LS(EQUAL)      &trans          &kp RGUI            &kp RSHIFT      &kp RALT        &kp RCTRL               &trans
     &trans      &kp TILDE         &kp LS(NUMBER_1)     &kp LS(NUMBER_2)        &kp LS(NUMBER_3)         &kp LS(BACKSLASH)  &trans          &trans              &trans          &trans          &trans                  &trans
-                                                       &kp KP_LEFT_PARENTHESIS &kp KP_RIGHT_PARENTHESIS &kp LS(MINUS)      &trans          &trans              &trans  
+                                                       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp LS(MINUS)      &trans          &trans              &trans  
                         >;
                 };
 
