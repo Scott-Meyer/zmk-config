@@ -47,13 +47,12 @@
 
         keymap {
                 compatible = "zmk,keymap";
-                
-       		default_layer {
+                default_layer {
 		bindings = <
-		&trans &kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O  &kp P  &kp BKSP 
-		&trans &kp A &kp S &hm LALT D &hm LGUI F &kp G 			       	&kp P &hm RGUI N &hm RALT E &kp A &kp O &trans
-		&trans &kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp , &kp . &kp / &trans
-          				&trans &sk LSHIFT &mt LC(LS(LALT)) SPC			&to 1 &sk RCTRL &trans
+		&trans &kp Y &kp C &kp L &kp M &kp K 						&kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP &trans 
+		&trans &kp I &kp S &hm LALT R &hm LGUI T &kp G 			       	&kp P &hm RGUI N &hm RALT E &kp A &kp O &trans 
+		&trans &kp Q &kp V &kp W &kp D &kp J				        &kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X &trans 
+          				&trans &sk LSHIFT &mt LC(LS(LALT)) SPC  				&to 1 &sk RCTRL &trans 
 		>;
 		};
 
