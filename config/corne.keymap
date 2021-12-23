@@ -104,7 +104,7 @@
 
 		gaming_numbers {
 		bindings = <
-		&kp 1 &kp 2  &kp 3 &kp 4 &kp 5 &kp 6 &trans &trans &trans &trans &trans &trans
+		&kp NUMBER_1 &kp NUMBER_2       &kp NUMBER_3        &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6 &trans &trans &trans &trans &trans &trans
 		&trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 		&trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 					 &trans &trans &trans  					&to 3 &trans &trans
