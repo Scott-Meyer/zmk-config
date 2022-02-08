@@ -43,7 +43,7 @@
 
 		bindings = <
 		&trans &kp Y &kp C &kp L &kp M &kp K 				             &kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP &trans 
-		&trans &kp I &kp S &mt LALT R &mt LGUI T &kp G 			       	     &kp P &mt RGUI N &mt RALT E &kp A &kp O &trans 
+		&trans &kp I &kp S &mt LALT R &mt LGUI T &kp G 			       	 &kp P &mt RGUI N &mt RALT E &kp A &kp O &trans 
 		&trans &kp Q &kp V &kp W &kp D &kp J				             &kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X &trans 
           			&trans &sk LSHIFT &mt LC(LS(LALT)) SPC  		     &to 1 &sk RCTRL &to 2 
 		>;
@@ -53,7 +53,7 @@
 		bindings = <
 		&trans &kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT		&kp CARET &kp LS(COMMA) &kp LS(DOT) &kp SEMI &kp BKSP &trans
 		&trans &kp TAB    &kp EQUAL    &trans      &kp SQT     &trans 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER &trans
-		&trans &kp TILDE    &kp LA(N3) 	&trans &kp kp DQT     &trans 	        &kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 &to 6
+		&trans &kp TILDE    &kp LA(N3) 	&trans &kp DQT     &trans 	        &kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 &to 6
 					    &trans &sk LSHIFT &to 0 					&to 2 &sk RALT &trans
 		>;
 		};
@@ -102,7 +102,7 @@
 		&kp TAB     &kp Q           &kp W           &kp E               &kp R           &kp T           &kp Y           &kp U               &kp I           &kp O           &kp P                   &kp BSPC
     	&kp LCTRL   &kp A           &kp S           &kp D               &kp F           &kp G           &kp H           &mt RGUI J          &mt LALT K      &kp L           &kp SEMICOLON           &kp SQT
     	&kp LSHFT   &kp Z           &kp X           &kp C               &kp V           &kp B           &kp N           &kp M               &kp COMMA       &kp DOT         &kp SLASH               &kp ENTER
-                                                    &kp ESC             &kp SPACE       &mo 7           &to 1           &kp BACKSPACE       &kp ESCAPE
+                                                    &kp ESC             &kp SPACE       &mo 7           &to 1           &kp BKSP      		&kp ESC
                         >;
                 };
 
