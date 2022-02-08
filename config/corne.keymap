@@ -42,18 +42,18 @@
 		default_layer {
 
 		bindings = <
-		&trans &kp Y &kp C &kp L &kp M &kp K 						&kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP &trans 
-		&trans &kp I &kp S &mt LALT R &mt LGUI T &kp G 			       	&kp P &mt RGUI N &mt RALT E &kp A &kp O &trans 
-		&trans &kp Q &kp V &kp W &kp D &kp J				        &kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X &trans 
-          				&trans &sk LSHIFT &mt LC(LS(LALT)) SPC  				&to 1 &sk RCTRL &trans 
+		&trans &kp Y &kp C &kp L &kp M &kp K 				             &kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP &trans 
+		&trans &kp I &kp S &mt LALT R &mt LGUI T &kp G 			       	     &kp P &mt RGUI N &mt RALT E &kp A &kp O &trans 
+		&trans &kp Q &kp V &kp W &kp D &kp J				             &kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X &trans 
+          			&trans &sk LSHIFT &mt LC(LS(LALT)) SPC  		     &to 1 &sk RCTRL &to 2 
 		>;
 		};
 
        		left_layer {
 		bindings = <
 		&trans &kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT		&kp CARET &kp LS(COMMA) &kp LS(DOT) &kp SEMI &kp BKSP &trans
-		&trans &kp TAB    &kp EQUAL    &kp LA(RBKT)      &kp LA(LS(RBKT))     &kp SQT 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER &to 4
-		&trans &kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 	&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 &to 6
+		&trans &kp TAB    &kp EQUAL    &trans      &kp SQT     &trans 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER &trans
+		&trans &kp TILDE    &kp LA(N3) 	&trans &kp kp DQT     &trans 	        &kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 &to 6
 					    &trans &sk LSHIFT &to 0 					&to 2 &sk RALT &trans
 		>;
 		};
@@ -62,8 +62,8 @@
 		bindings = <
 		&trans &kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &trans &trans
 		&trans &kp TAB  &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp LS(EQUAL) 			&kp EQUAL &kp N4  &kp N5  &kp N6   &kp ENTER &trans
-		&trans &to 4  &kp AMPS &kp SLASH &kp STAR &kp DOT    			&kp N0 &kp N1 &kp N2 &kp N3  &trans &trans
-					  &trans &sk LGUI &to 0  				  &to 2 &sk RALT &trans
+		&trans &to 4  &kp AMPS &kp SLASH &kp STAR &kp DOT    			                &kp N0 &kp N1 &kp N2 &kp N3  &to 3 &trans
+					  &trans &sk LGUI &to 0  				        &to 2 &sk RALT &trans
 		>;
 		};
 		
@@ -113,7 +113,7 @@
 		&trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 					 &trans &trans &trans  					&kp ENTER &trans &trans
 		>;
-		};	7kyPMb3tOSyP
+		};
         
 	};
 };
