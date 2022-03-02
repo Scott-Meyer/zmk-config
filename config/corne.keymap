@@ -90,7 +90,7 @@
 		bt {
 		bindings = <
 		&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&trans					&trans				&trans				&trans				&trans				&trans				&trans
-		&trans				&trans				&trans				&trans				&trans				&trans 					&bl BL_OFF			&bl BL_DEC			&trans				&trans				&trans				&trans
+		&trans				&trans				&trans				&trans				&trans				&trans 					&trans				&trans				&trans				&trans				&trans				&trans
 		&trans				&bt BT_PRV			&bt BT_NXT			&bt BT_CLR			&out OUT_BLE		&out OUT_USB  			&trans				&trans				&trans				&trans				&trans				&trans
 																	&trans				&trans				&to 0  					&to 1				&trans				&trans
 		>;
