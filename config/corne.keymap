@@ -49,50 +49,50 @@
 		default_layer {
 
 		bindings = <
-		&trans &trans &kp C &kp L &kp M &kp K 									&kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP &trans
-		&trans &kp I  &mt LCTRL S &hm LALT R &hm LGUI T &kp G					&kp P &hm RGUI N &hm RALT E &mt RCTRL A &kp O &trans
-		&trans &kp Q  &kp V &kp W &kp D &kp J									&kp B &kp H  &td UNDERSCORE Y &td EXCL DOT &kp X &trans
-          			&trans &sk LSHIFT &mt LC(LS(LALT)) SPC  		     &to 1 &kp ENTER &to 2 
+		&trans 				&trans				&kp C				&kp L				&kp M				&kp K 					&kp Z				&kp F				&kp U				&td MINUS COMMA		&kp BKSP			&trans
+		&trans 				&kp I				&mt LCTRL S			&hm LALT R			&hm LGUI T			&kp G					&kp P				&hm RGUI N			&hm RALT E			&mt RCTRL A			&kp O				&trans
+		&trans 				&kp Q				&kp V				&kp W				&kp D				&kp J					&kp B				&kp H				&td UNDERSCORE Y	&td EXCL DOT		&kp X				&trans
+          															&trans				&sk LSHIFT			&mt LC(LS(LALT)) SPC	&to 1				&kp ENTER			&to 2 
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&trans &trans  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT				&kp CARET &kp AMPS &kp STAR  &kp SEMI &kp BKSP &trans
-		&trans &kp TAB    &kp EQUAL    &kp LS(COMMA) &kp LS(DOT)     &kp SQT			&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &to 3 &trans
-		&trans &kp TILDE    &trans 	&kp LA(LBKT) &kp LA(RBKT)  &kp DQT					&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &kp SLASH &to 6
-					    								&trans &sk ESC &to 0 					&to 2 &kp ENTER &trans
+		&trans				&trans				&kp ATSN			&kp LS(N3)			&kp DLLR			&kp PRCNT				&kp CARET			&kp AMPS			&kp STAR			&kp SEMI 			&kp BKSP 			&trans
+		&trans				&kp TAB				&kp EQUAL			&kp LS(COMMA)		&kp LS(DOT)			&kp SQT					&kp BSLH			&kp LBRC			&kp RBRC			&kp PIPE			&to 3				&trans
+		&trans				&kp TILDE			&kp LC(LG(LS(N4)))	&kp LA(LBKT)		&kp LA(RBKT)		&kp DQT					&kp LBKT			&kp LPRN			&kp RPRN			&kp RBKT			&kp SLASH			&to 6
+					    											&trans				&sk ESC				&to 0					&to 2				&kp ENTER			&trans
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&trans &kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &trans &trans
-		&trans &kp TAB  &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp LS(EQUAL) 			&kp EQUAL &kp N4  &kp N5  &kp N6   &to 3 &trans
-		&trans &to 4  &trans &kp SLASH &trans  &kp DOT    			                &kp N0 &kp N1 &kp N2 &kp N3  &trans &trans
-					  &trans &sk LGUI &to 0  				        &to 2 &kp ENTER &trans
+		&trans				&kp ESC				&kp C_PP			&kp C_PREV			&kp C_NEXT			&kp LS(MINUS)			&kp MINUS  			&kp N7				&kp N8				&kp N9				&trans				&trans
+		&trans				&kp TAB				&trans				&kp C_VOL_DN		&kp C_VOL_UP		&kp LS(EQUAL)			&kp EQUAL			&kp N4				&kp N5				&kp N6				&to 3				&trans
+		&trans				&to 4				&trans				&kp SLASH			&trans				&kp DOT					&kp N0				&kp N1				&kp N2				&kp N3				&trans				&trans
+					  												&trans				&sk LGUI			&to 0					&to 2				&kp ENTER			&trans
 		>;
 		};
 		
 		tri_layer {
 		bindings = <
-		&trans &trans  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &kp NUM_5 			&kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(RBKT) &trans &trans
-		&trans &kp F1 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp DEL  						&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER &trans
-		&trans &td LG(GRAVE) GRAVE &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &trans   				&mkp LCLK &kp PG_DN  &kp K_VOL_DN  &trans &trans   &trans
-
+		&trans				&trans				&mwh SCROLL_LEFT	&mmv MOVE_UP		&mwh SCROLL_RIGHT	&kp NUM_5				&kp LG(LBKT)		&kp LC(LS(TAB))		&kp RC(TAB)			&kp LG(RBKT)		&trans				&trans
+		&trans				&kp F1				&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp DEL					&kp LEFT			&kp DOWN			&kp UP				&kp RIGHT			&kp ENTER			&trans
+		&trans				&td LG(GRAVE) GRAVE &mkp RCLK			&mwh SCROLL_UP		&mwh SCROLL_DOWN	&trans   				&mkp LCLK			&kp PG_DN			&kp K_VOL_DN		&trans				&trans				&trans
+																	&trans				&trans				&to 0  					&to 1				&kp ENTER			&trans
+					
 		//&trans &trans  &trans    &trans    &trans    &kp NUM_5 			&kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(RBKT) &trans &trans
 		//&trans &kp F1 &trans &trans &trans &kp DEL  						&kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &trans
 		//&trans &td LG(GRAVE) GRAVE &trans  &trans &trans &trans   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   &trans
 
-					 &trans &trans &to 0  					&to 1 &kp ENTER &trans
 		>;
 		};	
 		bt {
 		bindings = <
-		&bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans  		&bl BL_ON &bl BL_INC &trans &trans &trans &trans
-		&trans &trans  &trans &trans &trans &trans 										&bl BL_OFF &bl BL_DEC &trans &trans &trans &trans
-		&trans &bt BT_PRV  &bt BT_NXT &bt BT_CLR &out OUT_BLE &out OUT_USB  			&trans &trans &trans &trans &trans &trans
-					 &trans &trans &to 0  					&to 1 &trans &trans
+		&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&trans					&trans				&trans				&trans				&trans				&trans				&trans
+		&trans				&trans				&trans				&trans				&trans				&trans 					&bl BL_OFF			&bl BL_DEC			&trans				&trans				&trans				&trans
+		&trans				&bt BT_PRV			&bt BT_NXT			&bt BT_CLR			&out OUT_BLE		&out OUT_USB  			&trans				&trans				&trans				&trans				&trans				&trans
+																	&trans				&trans				&to 0  					&to 1				&trans				&trans
 		>;
 		};
 
