@@ -62,7 +62,7 @@
 		&kp ESCAPE			&kp Q				&kp W				&kp E				&kp R				&kp T															&kp Y				&kp U				&kp I					&td MINUS O			&kp P			    &kp MINUS
 		&kp TAB				&kp A				&mt LCTRL S			&hm LALT D			&hm LGUI F			&kp G															&kp H				&hm RGUI J			&hm RALT K				&mt RCTRL L			&kp SEMICOLON		&kp SQT
 		&trans				&kp Z				&kp X				&kp C				&kp V				&kp B															&kp N				&kp M				&td UNDERSCORE COMMA	&td EXCL DOT		&kp SLASH			&kp ENTER
-          															&trans				&sk LSHIFT			&mt LC(LS(LALT)) SPC &sk bspdel			&kp ENTER				&to 1				&kp ENTER			&trans
+          															&trans				&bspdel				&mt LC(LS(LALT)) SPC &sk LSHIFT			&kp ENTER				&to 1				&kp ENTER			&trans
 		>;
 		};
 
